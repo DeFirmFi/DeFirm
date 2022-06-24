@@ -258,7 +258,7 @@ contract DeFirm is ERC20Detailed, Ownable {
     uint256 public constant treasuryFee = 50;
     uint256 public constant warchestFee = 50;
 
-    uint256 public totalFee = liquidityFee.add(treasuryFee).add(warchestFee);
+    uint256 public constant totalFee = liquidityFee.add(treasuryFee).add(warchestFee);
     uint256 public constant feeDenominator = 1000;
 
     address constant DEAD = 0x000000000000000000000000000000000000dEaD;
